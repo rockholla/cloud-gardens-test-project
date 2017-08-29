@@ -1,0 +1,12 @@
+---
+version: '2'
+
+services:
+  web:
+    image: {{ image }}
+    ports:
+      - "0:3000"
+    labels:
+      - "traefik.frontend.rule=Host:{{ deployment }}.{{ domain }}"
+      - "traefik.frontend.entryPoints=http,https"
+      - "timestamp={{ timestamp }}"
