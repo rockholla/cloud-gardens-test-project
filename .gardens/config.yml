@@ -1,1 +1,5 @@
-alias: null
+---
+alias: cgtp
+commands:
+  build: "npm run build"
+  test: "npm run test"
