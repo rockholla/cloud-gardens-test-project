@@ -8,8 +8,8 @@ scripts:
   test: |
     npm run test
   # block of commands to execute after this repo/branch is cloned to the CI server
-  on_clone: ""
-  # block of commands to execute on the CI server prior to deploying this repo/branch to the garden
-  on_deploy: ""
-  # block of commands to execute on the CI server when removing a deployment of this repo/branch
-  on_remove: ""
+  after_clone: ""
+  # block of commands to execute on the CI server before building the image of this project and deploying this repo/branch to the garden
+  before_deploy: ""
+  # block of commands to execute on the CI server before removing a deployment of this repo/branch
+  before_remove: ""
