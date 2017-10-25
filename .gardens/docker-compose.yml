@@ -6,6 +6,8 @@ services:
     image: "{{ image }}"
     ports:
       - "0:3000"
+    volumes:
+      - "/opt/deployments/{{ subdomain }}:/var/www/project:rw"
     labels:
       - "traefik.frontend.rule=Host:{{ subdomain }}.{{ domain }}"
       - "traefik.frontend.entryPoints=http,https"

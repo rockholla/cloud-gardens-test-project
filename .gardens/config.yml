@@ -9,7 +9,9 @@ scripts:
     npm run test
   # block of commands to execute after this repo/branch is cloned to the CI server
   after_clone: ""
-  # block of commands to execute on the CI server before building the image of this project and deploying this repo/branch to the garden
+  # block of commands to execute before this repo/branch is deployed to container(s)
   before_deploy: ""
   # block of commands to execute on the CI server before removing a deployment of this repo/branch
   before_remove: ""
+  # block of commands to execute on the CI server after removing a deployment of this repo/branch
+  after_remove: ""
