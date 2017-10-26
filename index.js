@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', function (req, res) {
-  res.send('The test cloud garden project (master) is running!');
+  res.send('The test cloud garden project (feature/three) is running!');
 })
 
 app.listen(3000, function () {
