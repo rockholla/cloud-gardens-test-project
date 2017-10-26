@@ -11,6 +11,8 @@ scripts:
   after_clone: ""
   # block of commands to execute before this repo/branch is deployed to container(s)
   before_deploy: ""
+  # block of commands to execute after this repo/branch is deployed to container(s)
+  after_deploy: ""
   # block of commands to execute on the CI server before removing a deployment of this repo/branch
   before_remove: ""
   # block of commands to execute on the CI server after removing a deployment of this repo/branch
