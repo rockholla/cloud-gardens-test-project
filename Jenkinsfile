@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('Setup') {
       steps {
-        checkout scm
         sh 'npm install'
       }
     }
