@@ -1,12 +1,21 @@
-node {
-  stage('Setup') {
-    checkout scm
-    sh 'npm install'
-  }
-  stage('Build') {
-    sh 'npm run build'
-  }
-  stage('Test') {
-    sh 'npm run test'
+pipeline {
+  agent any
+  stages {
+    stage('Setup') {
+      steps {
+        checkout scm
+        sh 'npm install'
+      }
+    }
+    stage('Build') {
+      steps {
+        sh 'npm run build'
+      }
+    }
+    stage('Test') {
+      steps {
+        sh 'npm run test'
+      }
+    }
   }
 }
