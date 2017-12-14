@@ -1,6 +1,6 @@
 node {
   stage('Build') {
     checkout scm
-    npm install
+    sh 'npm install'
   }
 }
